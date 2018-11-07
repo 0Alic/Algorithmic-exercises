@@ -56,4 +56,46 @@ public class Power2 {
         
         return false;
     }
+
+    /*
+        Actually, my girlfriend came with a way better solution
+
+        try out the p-th roots for p in (2..31) and check whether the result is an integer
+
+        way better solution, all credits to her
+    */
+    public boolean isPower2(int a) {
+
+
+        if(a == 0) return false;
+        if(a == 1 || a ==  -1) return true;
+        
+        if(a < 0) a = -a;
+
+        for(int p = 2; p < 32; p++) {
+
+            double x = Math.pow(a, (double) 1 / (double) p);
+            if(x % 1 == 0)
+                return true;
+        }
+
+        return false;
+    }
+
+    public static void main(String[] args) {
+        
+        Power2 p = new Power2();
+
+        long l1, l2;
+
+        l1 = System.currentTimeMillis();
+        System.out.println(p.isPower2(Integer.parseInt(args[0])));
+        l2 = System.currentTimeMillis();
+        System.out.println((l2 - l1) + " msec");
+
+        l1 = System.currentTimeMillis();
+        System.out.println(p.isPower(Integer.parseInt(args[0])));
+        l2 = System.currentTimeMillis();
+        System.out.println((l2 - l1) + " msec");
+    }
 }
