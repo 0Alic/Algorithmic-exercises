@@ -9,6 +9,7 @@ The more you know: :moyai: means OK!
 | Title  | Solved | Partially solved | Needed Hint | Needed Solution |  Memory Efficient | Time Efficient | Comment |
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 | ListCycle |  | ● | ● | ● | ● | :grey_question: | Could only find if cycle exists or not |
+| ModifiedKnight | ● |  |  |  | :grey_question: | ● | :moyai: |
 | Power2 | ● |   |   |   | ● | ● | :moyai:, until [fsbolgi](https://github.com/fsbolgi) came with a way better solution 2 hours later :cry: |
 | Reach | ● |   |   |   | ● | ● | :moyai: |
 | SpecialEqu | ● |   |   |   | :grey_question: | ● | May not be perfect solution |
